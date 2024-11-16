@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ball" id="ball" onclick="changed()">
+
+        </div>
+    </div>
+
+    <style>
+        .container{
+            height: 2rem;
+            width: 5rem;
+            border-radius: 5rem;
+            background-color: #21DF4E;
+            margin: 10rem auto;
+        }
+
+        #ball{
+            height: 2rem;
+            width: 2rem;
+            border-radius: 5rem;
+            background-color: aliceblue;
+        }
+
+        .darkmode{
+            background-color: black;
+            color: white;
+        }
+
+        .movebutton{
+            margin: 0px 0px 0px 3rem;
+        }
+
+
+
+
+
+    </style>
+
+    <script>
+        function changed(){
+            let ball = document.getElementById("ball")
+            document.body.classList.toggle("darkmode")
+            ball.classList.toggle("movebutton")
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

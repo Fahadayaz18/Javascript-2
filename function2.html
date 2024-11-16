@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="card">
+        <h1 id="fname">First Name:</h1>
+        <h1 id="lname">Last Name:</h1>
+        <h1 id="score">Score:</h1>
+
+        <button onclick="myfunction2()" id="btn2">Back</button>
+
+        
+    </div>
+
+    <style>
+        body{
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        #card{
+            width: 60%;
+            height: 60vh;
+            background-color: white;
+            padding: 20px;
+            margin: -50rem 0px 0px 16rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: ease-in-out 1s;
+        }
+    </style>
+
+    <button onclick="myfunction()" id="btn">Click me</button>
+
+    <script>
+        //initializing the variables
+
+        let card = document.getElementById('card')
+        let fname = document.getElementById('fname')
+        let lname = document.getElementById('lname')
+        let score = document.getElementById('score')
+
+        //calling the function in Javascript
+        function myfunction(){
+            card.style.marginTop = '0px'
+            fname.innerHTML = 'First Name: Fahad'
+            lname.innerHTML = 'Last Name: Ayaz'
+            score.innerHTML = 'Score: 90'
+        }
+
+        function myfunction2(){
+            card.style.marginTop = '-50rem'
+            fname.innerHTML = 'First Name: Fahad'
+            lname.innerHTML = 'Last Name: Ayaz'
+            score.innerHTML = 'Score: 90'
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

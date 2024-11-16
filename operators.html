@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <h1 id="batch"></h1>
+    <h1 id="age"></h1>
+    <h1 id="enrolled"></h1>
+
+
+
+    <script>
+        let a = 18
+        let b = 'Fahad'
+        let c = true
+        let d = undefined
+        let e = null
+        let f = {
+            name: 'Fahad',
+            batch: '2407E',
+            age: 18,
+            enrolled: true
+        }
+
+        console.log(f.name);
+        console.log(f.batch);
+        console.log(f.age)
+        console.log(f.enrolled)
+
+        let name = document.getElementById('name')
+        let batch = document.getElementById('batch')
+        let age = document.getElementById('age')
+        let enrolled = document.getElementById('enrolled')
+
+
+
+        //Template literals string interpolation
+        name.innerHTML = `Name: ${f.name}`
+        batch.innerHTML = `Batch: ${f.batch}`
+        age.innerHTML = `Age: ${f.age}`
+        enrolled.innerHTML = `Enrolled: ${f.enrolled}`
+
+        console.log(name);
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" min="18" max="35" name="" id="" oninput="showerror()">
+    <button onclick="showresult()">Click Me</button>
+    <div><label id="errormsg"></label></div>
+
+    <script>
+        let inp = document.querySelector('input')
+        let errormsg = document.getElementById('errormsg')
+
+        //show result
+        function showresult(){
+
+            if(inp.value >= 18 && inp.value <= 35){
+                alert('You are allowed')
+            }
+
+            else{
+                alert('Sorry, you are not allowed')
+            }
+        }
+
+        //show error
+        function showerror(){
+
+        if(inp.value >= 18 && inp.value <= 35){
+
+         errormsg.innerHTML = 'allowed'
+         errormsg.style.color = 'green'
+         inp.style.color = 'black'
+        }
+
+        else{
+            errormsg.innerHTML = 'Sorry, you are not allowed'
+            errormsg.style.color = 'red'
+            inp.style.color = 'red'
+        
+            }
+        }
+
+    </script>
+</body>
+</html>

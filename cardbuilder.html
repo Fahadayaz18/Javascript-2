@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="name" id="bgcolor" placeholder="Enter bg color" oninput="changebgcolor()">
+    <input type="name" id="textcolor" placeholder="Enter text color" oninput="changetextcolor()">
+    <input type="name" id="cardtitle" placeholder="Enter card title" oninput="changecardtitle()">
+    <input type="name" id="cardimage" placeholder="Enter image url" oninput="changecardimage()">
+    <input type="name" id="carddesc" placeholder="Enter description" oninput="changecarddesc()">
+    <input type="name" id="radius" placeholder="Enter border radius" oninput="changeradius()">
+
+
+    <!-- card starting -->
+    <div id="card">
+        <img src="" alt="" id="image">
+        <h1 id="title">Title</h1>
+        <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores corrupti nihil
+            unde cupiditate molestias dignissimos, aspernatur ipsum voluptas in tempore iusto voluptate
+            recusandae doloribus vel cum nobis, eos laudantium.</p>
+    </div>
+    <!-- card ending -->
+
+    <style>
+        #card{
+            width: 30%;
+            height: 20rem;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10rem auto;
+        }
+    </style>
+
+
+    <script>
+        //initializing all the variables
+
+        let bgcolor = document.getElementById('bgcolor')
+        let textcolor = document.getElementById('textcolor')
+        let cardtitle = document.getElementById('cardtitle')
+        let cardimage = document.getElementById('cardimage')
+        let carddesc = document.getElementById('carddesc')
+        let radius = document.getElementById('radius')
+
+        //All card elements
+        let card = document.getElementById('card')
+        let image = document.getElementById('image')
+        let title = document.getElementById('title')
+        let desc = document.getElementById('desc')
+
+        //Calling all the functions
+
+        function changebgcolor(){
+            card.style.background = bgcolor.value
+        }
+       
+        function changetextcolor(){
+            card.style.color = textcolor.value
+        }
+       
+        function changecardtitle(){
+            title.innerHTML = cardtitle.value
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
